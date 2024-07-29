@@ -1,20 +1,20 @@
 ---
 title: Descarga de la extensión Document Security de Adobe Experience Manager/Rights Management de LiveCycle para Microsoft® Office
-description: Utilice la extensión de Document Security para el software Microsoft&reg; Office para proteger los archivos esenciales contra el acceso no autorizado
+description: Utilice el software Document Security Extension para Microsoft&reg; Office para proteger los archivos esenciales contra el acceso no autorizado
 uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 # Descarga de la extensión Document Security de Adobe Experience Manager/Rights Management de LiveCycle para Microsoft® Office {#download-adobe-experience-manager-document-security-livecycle-rights-management-extension-for-microsoft-office}
 
-Con la extensión del software Document Security para Microsoft® Office, puede mantener la confidencialidad de la información confidencial. Puede proteger los archivos esenciales contra el acceso no autorizado en todo momento. Esta protección se aplica desde la creación del documento hasta su distribución. También incluye el archivado y la destrucción, independientemente de cómo se distribuyan los archivos o dónde se almacenen.
+Con el software Document Security Extension para Microsoft® Office, puede mantener la confidencialidad de la información sensible. Puede proteger los archivos esenciales contra el acceso no autorizado en todo momento. Esta protección se aplica desde la creación del documento hasta su distribución. También incluye el archivado y la destrucción, independientemente de cómo se distribuyan los archivos o dónde se almacenen.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Con la extensión del software Document Security para Microsoft® Office, puede 
 
 * Versiones de 32 o 64 bits de Windows 7 o Windows 10 de Microsoft®
 * Nota: También se espera que la extensión de Document Security para Microsoft® Office funcione en dispositivos Microsoft® Surface.
-* Versiones de 32 o 64 bits de Microsoft® Office 2013, 2016, 2019 o aplicaciones de escritorio de Microsoft® Office instaladas como parte de Office 365
+* Versiones de 32 o 64 bits de Microsoft® Office 2013, 2016, 2019 o aplicaciones de Microsoft® Office para escritorio instaladas como parte de Office 365
 * Procesador de 1,3 GHz o superior
 * 2 GB de RAM
 * 100 MB de espacio disponible en el disco duro

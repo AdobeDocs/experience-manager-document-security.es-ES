@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6136'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -19,25 +19,25 @@ ht-degree: 70%
 
 Puede controlar el uso que hacen los destinatarios de los archivos protegidos mediante directivas, independientemente de la amplitud de su distribución.
 
-Con la extensión de Document Security para Microsoft® Office, puede realizar estas tareas:
+Con Document Security Extension para Microsoft® Office, puede realizar estas tareas:
 
 * Configurar la conexión a Document Security
 * Aplicar una directiva a un archivo
 * Abrir las páginas web de Document Security para crear y administrar directivas de usuario
 * Eliminar la protección de una directiva de un archivo
 * Cambiar la directiva aplicada a un archivo
-* Abra las páginas web de Document Security para anular el acceso a los archivos o cambiar la directiva del archivo
+* Abrir las páginas web de Document Security para revocar el acceso a los archivos o cambiar la directiva del archivo
 * Abrir las páginas web de Document Security para ver el historial de auditoría del archivo
 
 ### Conectar con un servidor de Document Security {#connect-to-a-document-security-server}
 
-Si desea aplicar directivas a los archivos, debe configurar los parámetros de conexión de Document Security. Según la instalación de la extensión de Document Security para Microsoft® Office, es posible que ya tenga la configuración de conexión predeterminada. Puede agregar la configuración de conexión para una o varias instancias de Document Security. Puede obtener información del servidor del administrador de Document Security.
+Si desea aplicar directivas a los archivos, debe configurar los parámetros de conexión de Document Security. Según la instalación de Document Security Extension para Microsoft® Office, es posible que ya tenga la configuración de conexión predeterminada. Puede agregar la configuración de conexión para una o varias instancias de Document Security. Puede obtener información del servidor del administrador de Document Security.
 
-Configure el servidor que desea utilizar para proteger archivos o administrar los archivos protegidos como servidor predeterminado. Al aplicar una directiva a un archivo nuevo o abrir las páginas web de Document Security, la extensión de Document Security para Microsoft® Office se conecta al servidor predeterminado. Si protege los archivos con más de una instancia de Document Security, debe cambiar la configuración predeterminada del servidor al cambiar entre servidores. Puede abrir archivos protegidos por cualquier instancia de Document Security siempre y cuando tenga autorización para abrir el archivo.
+Configure el servidor que desea utilizar para proteger archivos o administrar los archivos protegidos como servidor predeterminado. Al aplicar una política a un archivo nuevo o abrir las páginas web de Document Security, Document Security Extension para Microsoft® Office se conecta al servidor predeterminado. Si protege los archivos con más de una instancia de Document Security, debe cambiar la configuración predeterminada del servidor al cambiar entre servidores. Puede abrir archivos protegidos por cualquier instancia de Document Security siempre y cuando tenga autorización para abrir el archivo.
 
-Si el servidor de Document Security utiliza la autenticación basada en certificados, debe instalar el certificado que recibió en el equipo local. Debe elegir una autenticación de certificado y proporcionar el certificado que desea utilizar para la autenticación.
+Si el servidor de Document Security utiliza la autenticación basada en certificado, deberá instalar el certificado que recibió en el equipo local. Se le solicitará que elija una autenticación de certificado y proporcione el certificado que desea utilizar para la autenticación.
 
-Después de establecer la configuración de conexión para una instancia de Document Security en una aplicación de Microsoft® Office, se configura para todos los formatos de Word, Excel y PowerPoint.
+Después de configurar los ajustes de conexión para una instancia de Document Security en una aplicación de Microsoft® Office, se configura para todos los formatos de Word, Excel y PowerPoint.
 
 #### Instalar el certificado del lado del cliente {#install-the-client-side-certificate}
 
@@ -72,11 +72,11 @@ Si necesita acceder a las páginas web de Document Security mediante autenticaci
 
 >[!NOTE]
 >
->Si no puede conectarse al servidor, intente abrir las páginas web de Document Security en Internet Explorer. Si no puede conectarse al servidor mediante Internet Explorer o si aparece una advertencia sobre el certificado del servidor, la extensión de Document Security para Microsoft® Office no podrá conectarse al servidor. Póngase en contacto con el administrador del servidor para obtener ayuda.
+>Si no se puede conectar con el servidor, intente abrir las páginas web de Document Security en Internet Explorer. Si no se puede conectar con el servidor mediante Internet Explorer o si aparece un cuadro de diálogo con una advertencia sobre el certificado del servidor, Document Security Extension para Microsoft® Office no podrá conectarse al servidor. Póngase en contacto con el administrador del servidor para obtener ayuda.
 
 >[!NOTE]
 >
->Si no puede conectarse a Document Security, aparece un mensaje que indica que &quot;El nombre de usuario y la contraseña son incorrectos, compruebe la configuración e inténtelo de nuevo&quot;. Este mensaje puede aparecer si no se puede conectar por otro motivo. Si se conectó al servidor por primera vez, compruebe que ha establecido correctamente el nombre y el puerto del servidor.
+>Si no puede conectarse a Document Security, aparece un mensaje que indica que “El nombre de usuario y la contraseña no son correctos, compruebe la configuración y vuelva a intentarlo”. Este mensaje puede aparecer si no se puede conectar por otro motivo. Si se estaba conectando al servidor por primera vez, compruebe que ha establecido correctamente el nombre y el puerto del servidor.
 
 #### Especificar servidor predeterminado {#specify-the-default-server}
 
@@ -88,9 +88,9 @@ Si necesita acceder a las páginas web de Document Security mediante autenticaci
 
 ### Uso de proveedores de autenticación de terceros {#using-third-party-authentication-providers}
 
-Puede utilizar proveedores de autenticación de terceros con AEM Forms Document Security. Estos proveedores de autenticación le ayudan a agregar una capa de acceso adicional a los documentos protegidos. AEM Forms Document Security admite los siguientes flujos de trabajo de autenticación extendida:
+Puede utilizar proveedores de autenticación de terceros con AEM Forms Document Security. Estos proveedores de autenticación le ayudan a agregar una capa de acceso adicional a los documentos protegidos. AEM Forms Document Security admite los siguientes flujos de trabajo de autenticación extendidos:
 
-* Autenticación extendida mediante la dirección URL de AEM Forms predeterminada
+* Autenticación extendida mediante la URL de AEM Forms predeterminada
 * Autenticación extendida mediante una dirección URL personalizada
 * Flujo de trabajo de autenticación extendida predeterminado con proveedores de identidad de terceros configurados en AEM Forms en el servidor JEE
 * Flujo de trabajo de autenticación extendida personalizado con proveedores de identidad de terceros configurados en AEM Forms en el servidor JEE
@@ -98,7 +98,7 @@ Puede utilizar proveedores de autenticación de terceros con AEM Forms Document 
 
 #### Autenticación extendida mediante la URL de AEM Forms predeterminada {#extended-authentication-using-default-aem-forms-url}
 
-Puede utilizar la dirección URL predeterminada de AEM Forms para la autenticación extendida. La página de aterrizaje predeterminada contiene la marca de Adobe. Además, la configuración predeterminada de AEM Forms se utiliza al utilizar la dirección URL predeterminada de AEM Forms para la autenticación extendida.
+Puede utilizar la URL de AEM Forms predeterminada para la autenticación extendida. La página de aterrizaje predeterminada contiene la marca de Adobe. Además, la configuración predeterminada de AEM Forms se usa al utilizar la dirección URL predeterminada de AEM Forms para la autenticación extendida.
 
 Realice los siguientes pasos para habilitar la autenticación extendida con la dirección URL de aterrizaje de Adobe predeterminada:
 
@@ -111,7 +111,7 @@ Realice los siguientes pasos para habilitar la autenticación extendida con la d
 
    >[!NOTE]
    >
-   >Utilice un nombre de host completo en la dirección URL. El Adobe recomienda utilizar el protocolo HTTPS.
+   >Utilice un nombre de host completo en la dirección URL. Adobe le recomienda utilizar el protocolo HTTPS.
 
    Ahora, AEM Forms Document Security está configurado para utilizar la autenticación extendida con la dirección URL de aterrizaje de AEM Forms predeterminada.
 
@@ -128,17 +128,17 @@ Puede empaquetar la página de autenticación personalizada en un archivo war e 
 
 Para habilitar una autenticación extendida con una dirección URL de aterrizaje personalizada:
 
-1. Implemente el archivo WAR de autenticación personalizada en AEM Forms Server.
+1. Implemente el archivo WAR de autenticación personalizada en el servidor de AEM Forms.
 1. Abra la interfaz de usuario del administrador de AEM Forms.
 1. Vaya a Servicios > Document Security > Configuración > Configuración del servidor.
-1. Active la opción Permitir autenticación extendida y especifique una URL de aterrizaje de autenticación extendida personalizada.
-1. Agregue las siguientes entradas al archivo `config.xml` en el nodo SSO después de la entrada *&lt;node name=&quot;AllowedUrls&quot;>*:
+1. Active la opción Permitir autenticación extendida y especifique la URL de aterrizaje de autenticación extendida personalizada.
+1. Añada las siguientes entradas al archivo `config.xml` en el nodo de SSO después de la entrada *&lt;node name=&quot;AllowedUrls&quot;>*:
 
    >[!NOTE]
    >
    >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>`!!discoiqbr!!`&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>`!!discoiqbr!!`&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>`!!discoiqbr!!`
 
-   Para obtener información detallada sobre la actualización del archivo config.xml, consulte [Edición manual del archivo de configuración de Document Security](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file).
+   Para obtener información detallada sobre la actualización del archivo config.xml, consulte [Edición manual del archivo de configuración de Document Security](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file).
 
    Ahora, AEM Forms Document Security está configurado para utilizar la autenticación extendida con una dirección URL de aterrizaje personalizada
 
@@ -178,13 +178,13 @@ Si todavía no tiene una cuenta de Document Security, puede iniciar el proceso d
 * Un usuario de Document Security que desea enviarle un archivo protegido por una directiva le agrega a una directiva.
 * El administrador de Document Security crea una cuenta para usted.
 
-Después de registrarse y activar la cuenta, puede utilizar archivos protegidos por directivas que recibió autorización para utilizar mediante una directiva.
+Después de registrarse y activar la cuenta, podrá utilizar los archivos protegidos por directivas cuyo uso le haya sido autorizado mediante una directiva.
 
 >[!NOTE]
 >
 >Si recibe un archivo protegido por una directiva y no tiene una cuenta de Document Security, póngase en contacto con la persona que le envió el archivo para obtener ayuda. Del mismo modo, si recibe una invitación para registrarse, póngase en contacto con el remitente para obtener ayuda.
 
-Si recibe una invitación por correo electrónico de Document Security para registrarse, puede hacerlo utilizando la URL del mensaje de correo electrónico para abrir la página de registro en línea. Después de registrarse, recibe un segundo aviso sobre la activación de su cuenta.
+Si recibe una invitación por correo electrónico de Document Security para registrarse, puede hacerlo utilizando la URL del mensaje de correo electrónico para abrir la página de registro en línea. Después de registrarse, recibirá un segundo aviso sobre la activación de su cuenta.
 
 #### Obtener una cuenta de usuario externa {#obtain-an-external-user-account}
 
@@ -200,7 +200,7 @@ Si recibe una invitación por correo electrónico de Document Security para regi
 1. Abra el correo electrónico de confirmación de registro de Document Security.
 1. Haga clic en la dirección URL que aparece en el mensaje.
 1. Haga clic en el vínculo a la página Inicio de sesión.
-1. En el cuadro **Nombre de usuario**, escriba la dirección de correo electrónico en la que está registrado con Document Security. Esta dirección de correo electrónico es el nombre de usuario predeterminado de Document Security.
+1. En el cuadro **Username**, escriba la dirección de correo electrónico con la que se registró con Document Security. Esta dirección de correo electrónico es el nombre de usuario predeterminado de Document Security.
 1. En el cuadro **Password**, escriba la contraseña que creó al registrarse.
 1. Haga clic en **Login**.
 
@@ -323,13 +323,13 @@ Algunos de los ajustes de directiva disponibles para crear directivas en las pá
  </tbody>
 </table>
 
-Para obtener más información sobre la creación y administración de directivas, consulte [Ayuda para el usuario final de Document Security](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
+Para obtener más información sobre la creación y administración de directivas, consulte [Ayuda para el usuario final de Document Security](https://help.adobe.com/es_US/AEMForms/6.1/RMHelp/).
 
 ### Aplicar directivas {#applying-policies}
 
-Puede aplicar cualquier directiva disponible a un archivo, incluidas las directivas que haya creado y las directivas que formen parte de conjuntos de directivas a las que tenga acceso. Antes de aplicar una directiva, debe guardar el archivo.
+Puede aplicar cualquier directiva disponible a un archivo, incluidas las directivas que haya creado y las que formen parte de conjuntos de directivas a las que tenga acceso. Antes de aplicar una directiva, debe guardar el archivo.
 
-AEM Después de aplicar una directiva, se agrega a la lista Utilizadas recientemente en el menú Seguridad de documentos de la aplicación para facilitar la aplicación de las directivas que se utilizan con más frecuencia. La lista Utilizado recientemente muestra las directivas únicamente para el servidor al que está conectado o su servidor predeterminado si no ha iniciado sesión en otra instancia de Document Security.
+Después de aplicar una directiva, se añade a la lista Utilizados recientemente en el menú de AEM Document Security para facilitar la aplicación de las directivas que se utilizan con más frecuencia. La lista Utilizados recientemente muestra las directivas únicamente para el servidor al que está conectado o su servidor predeterminado si no ha iniciado sesión en otra instancia de Document Security.
 
 >[!NOTE]
 >
@@ -346,46 +346,46 @@ AEM Después de aplicar una directiva, se agrega a la lista Utilizadas recientem
 
 #### Aplicar una directiva usada recientemente {#apply-a-recently-used-policy}
 
-1. En la extensión de Document Security para Microsoft® Office 2010 y 2013, en la pestaña **Document Security**, seleccione **Proteger** > *[Nombre de directiva]*.
+1. En Document Security Extension para Microsoft® Office 2010 y 2013, en la pestaña **Document Security**, seleccione **Proteger** > *[Nombre de la normativa]*.
 1. Guarde el archivo.
 
 ## Usar archivos protegidos por directivas {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
 El editor del archivo es propietario de la propiedad intelectual de los archivos protegidos por directivas, que Document Security protege.
 
-Puede utilizar archivos protegidos por políticas tanto si pertenece como si no a la organización del editor de archivos. Document Security debe reconocerle para abrir archivos protegidos por directivas. Debe hacerlo mediante LDAP/Active Directory. O bien, debe hacerlo como usuario local para formularios de LiveCycle AEM/en JEE o registrándose después de una invitación.
+Puede utilizar archivos protegidos por políticas tanto si pertenece como si no a la organización del editor de archivos. Document Security debe reconocerle para abrir archivos protegidos mediante una directiva. Debe hacerlo mediante LDAP/Active Directory. O bien, debe hacerlo como usuario local para formularios de LiveCycle AEM/en JEE o registrándose después de una invitación.
 
-Si recibe un archivo protegido por una directiva y no tiene una cuenta de Document Security, póngase en contacto con el remitente para obtener ayuda. Del mismo modo, si recibe una invitación para registrarse, póngase en contacto con el remitente para obtener ayuda.
+Si recibe un archivo protegido por directivas y no tiene una cuenta de Document Security, póngase en contacto con el remitente para obtener ayuda. Del mismo modo, si recibe una invitación para registrarse, póngase en contacto con el remitente para obtener ayuda.
 
 ### Uso de archivos protegidos por políticas en Microsoft® Office {#working-with-policy-protected-files-in-microsoft-office}
 
-La extensión de Document Security para Microsoft® Office restringe ciertas funciones de Word, Excel y PowerPoint para proteger la propiedad intelectual del editor del archivo. Si no tiene permiso para cambiar el archivo, no puede guardar las modificaciones.
+Document Security Extension para Microsoft® Office restringe determinadas funcionalidades de Word, Excel y PowerPoint para proteger la propiedad intelectual del editor del archivo. Si no tiene permiso para cambiar el archivo, no puede guardar las modificaciones.
 
-Si está trabajando con un archivo protegido por una directiva, es posible que algunas características del producto no estén disponibles o que no funcionen como de costumbre. Si un archivo no protegido está abierto, la mayoría de las funciones están habilitadas, excepto las que permiten importar o copiar contenido de un archivo protegido por una directiva sin permisos de copia o exportación.
+Si está trabajando con un archivo protegido por una directiva, es posible que algunas características del producto no estén disponibles o que no funcionen como de costumbre. Si un archivo no protegido está abierto, la mayoría de las funciones se habilitan, excepto las que permiten importar o copiar contenido de un archivo protegido mediante normativa sin permisos de copia o exportación.
 
 >[!NOTE]
 >
->Cuando se utilizan aplicaciones de Office compatibles con la extensión de Document Security, se recomienda desactivar la configuración DEP de Windows. Para garantizar un inicio sin problemas de las aplicaciones de Office en un equipo con extensión de Document Security y McAfee VirusScan con la opción de protección de acceso activada, desactive la opción Protección contra desbordamientos de búfer en la consola de McAfee VirusScan. Este ajuste ayuda a evitar posibles conflictos.
+>Cuando se utilizan aplicaciones de Office compatibles con la extensión de Document Security, se recomienda desactivar la configuración DEP de Windows. Para garantizar que las aplicaciones de Office se inicien sin problemas en un equipo que tenga instalado Document Security Extension y McAfee VirusScan con el análisis en tiempo real activado, desactive la opción de protección contra desbordamiento del búfer en la consola de McAfee VirusScan. Este ajuste ayuda a evitar posibles conflictos.
 
-Si una función no está disponible, el nombre del comando en el menú y el botón de barra de herramientas relacionado no estarán disponibles. En la extensión de Document Security para Microsoft® Office, cuando pasa el puntero del ratón sobre el comando o el botón, una información del objeto indica que Document Security ha bloqueado el comando.
+Si una función no está disponible, el nombre del comando en el menú y el botón de barra de herramientas relacionados no están disponibles. En Document Security Extension para Microsoft® Office, cuando pasa el puntero del ratón sobre el comando o el botón, una sugerencia de herramienta indica que con Document Security el comando no está disponible.
 
 ### Abrir archivos protegidos por directivas {#opening-policy-protected-files}
 
-Puede abrir archivos protegidos por directivas utilizando los mismos métodos que utiliza para abrir cualquier otro archivo. Si aún no ha iniciado sesión en Document Security, se le pedirá que lo haga. Es decir, si no está conectado a Internet y puede abrir el archivo sin conexión. Si cancela el proceso de inicio de sesión, se deniega el acceso.
+Puede abrir archivos protegidos por directivas con los mismos métodos que para cualquier otro archivo. Si aún no ha iniciado sesión en Document Security, se le pedirá que lo haga. Es decir, si no está conectado a Internet y puede abrir el archivo sin conexión. Se deniega el acceso si cancela el proceso de inicio de sesión.
 
-Si no tiene permiso para abrir el archivo, se le informará de que se ha denegado el acceso. Si se han revocado los privilegios de acceso a archivos, también se le puede dirigir a una versión actualizada del archivo si hay una disponible. Si no puede abrir un archivo protegido por una directiva, póngase en contacto con el editor de archivos para obtener ayuda adicional.
+Si no tenía permiso para abrir el archivo, se le informará de que se ha denegado el acceso. Si se han revocado los privilegios de acceso a archivos, también se le puede dirigir a una versión actualizada del archivo si hay una disponible. Si no puede abrir un archivo protegido por una directiva, póngase en contacto con el editor de archivos para obtener ayuda adicional.
 
 Cuando se abre un archivo protegido, el texto de la barra de título que sigue al nombre del archivo indica que el archivo está protegido por AEM Document Security.
 
-Al abrir un documento protegido en la extensión de Document Security para Microsoft® Office desde SharePoint Server, asegúrese de que el programa de Office asociado al tipo de archivo, como Word, Excel o PowerPoint, esté abierto. Si intenta abrir el archivo sin abrir la aplicación asociada, es posible que el documento no se abra y se muestre un mensaje de error que indique que debe instalar el complemento aplicable. Además de abrir la aplicación necesaria, Adobe recomienda borrar la carpeta de la memoria caché. Hágalo antes de abrir un documento protegido en la extensión de Document Security para Office desde SharePoint Server. Además, cuando se abre un documento protegido desde SharePoint Server, todos los permisos del documento se desactivan, independientemente de la directiva que se haya aplicado.
+Al abrir un documento protegido en Document Security Extension para Microsoft® Office desde SharePoint Server, asegúrese de que esté abierto el programa de Office asociado al tipo de archivo, como Word, Excel o PowerPoint. Si intenta abrir el archivo sin la aplicación asociada, es posible que el documento no se abra y se muestre un mensaje de error que indique que debe instalar el complemento aplicable. Además de abrir la aplicación necesaria, Adobe recomienda borrar la carpeta de la memoria caché. Hágalo antes de abrir un documento protegido en Document Security Extension para Office desde SharePoint Server. Además, cuando se abre un documento protegido desde SharePoint Server, todos los permisos del documento se desactivan, independientemente de la directiva que se haya aplicado.
 
-Según el método de autenticación implementado en Document Security, se le puede pedir que elija el método de autenticación al abrir un documento protegido. Si Document Security admite más de un método de autenticación, se le presentarán las opciones de autenticación. Por ejemplo, si un servidor de Document Security proporciona autenticación de nombre de usuario/contraseña y de certificado, puede elegir el método de autenticación adecuado. Si la autenticación basada en certificados está habilitada, se le pedirá que utilice el certificado que ha recibido e instalado.
+Según el método de autenticación implementado en Document Security, se le puede pedir que elija el método de autenticación al abrir un documento protegido. Si Document Security admite más de un método de autenticación, se le presentarán las opciones de autenticación. Por ejemplo, si el servidor de Document Security proporciona autenticación de nombre de usuario/contraseña y de certificado, puede elegir el método de autenticación adecuado. Si la autenticación basada en certificado está habilitada, se le pedirá que utilice el certificado que ha recibido e instalado.
 
 La experiencia del usuario al abrir archivos protegidos depende de la configuración de autenticación mutua en el servidor. Si solo hay un certificado de cliente válido instalado, no aparece ningún cuadro de diálogo de autenticación y los archivos se abren correctamente. Sin embargo, si hay varios certificados de cliente instalados en un equipo, aparece un cuadro de diálogo de autenticación. El usuario debe elegir un certificado válido para abrir el archivo protegido.
 
 ### Quitar la protección de directivas de un archivo {#removing-policy-protection-from-a-file}
 
-Si se le permitió, puede quitar la protección de directivas de los archivos protegidos. Si lo hace, Document Security dejará de proteger el archivo.
+Si está autorizado, puede quitar protección de directivas de los archivos protegidos. Si lo hace, Document Security dejará de proteger el archivo.
 
 1. En la extensión de Document Security para Microsoft® Office 2010 y 2013, en la pestaña **Document Security**, seleccione **Quitar**.
 
@@ -397,7 +397,7 @@ Si se le permitió, puede quitar la protección de directivas de los archivos pr
 
 ### Visualización de la configuración de seguridad {#viewing-security-settings}
 
-Puede ver los permisos que tiene para imprimir el archivo actual. También puede ver los permisos del archivo actual cuando copie, cambie y acceda sin conexión, junto con el período de validez del archivo.
+Puede ver los permisos que tiene para imprimir el archivo actual. También puede ver los permisos para el archivo actual al copiar desde él, realizar cambios y acceder a él sin conexión, junto con el período de validez del archivo.
 
 En la extensión de Document Security para Microsoft® Office 2010, el grupo Estado de seguridad de la pestaña Document Security muestra sus permisos para el archivo.
 
@@ -409,29 +409,29 @@ Haga lo siguiente:
 
 Si el administrador ha habilitado la funcionalidad de política de aplicación automática, cualquier documento que cree o edite se protegerá automáticamente al guardar el documento.
 
-Si la directiva de aplicación automática está habilitada, la extensión de Document Security para Microsoft® Office le pedirá que inicie sesión en el servidor de Document Security. Escriba su nombre de usuario y contraseña para que el servidor pueda autenticarle. Si ha proporcionado las credenciales de inicio de sesión correctas, el documento se guardará y protegerá.
+Si la directiva de aplicación automática está activada, Document Security Extension para Microsoft® Office le pide que inicie sesión en el servidor de Document Security. Escriba su nombre de usuario y contraseña para que el servidor pueda autenticarle. Si ha proporcionado las credenciales de inicio de sesión correctas, el documento se guardará y protegerá.
 
 >[!NOTE]
 >
->Si no puede iniciar sesión en Document Security, es posible que el documento se guarde o no. Esta situación depende de cómo haya configurado el administrador la directiva de aplicación automática. Consulte con el administrador cómo se gestionan los documentos en esta situación.
+>Si no puede iniciar sesión en Document Security, es posible que el documento se guarde o no. Esto depende de cómo haya configurado el administrador la directiva de aplicación automática. Consulte con el administrador cómo se gestionan los documentos en esta situación.
 
 ### Sincronización del acceso sin conexión {#synchronizing-for-offline-access}
 
-Las directivas pueden permitirle abrir archivos sin conexión y sin estar conectado a Document Security. Debe haber iniciado sesión anteriormente en Document Security para poder establecer sus credenciales con el servidor antes de poder trabajar sin conexión. Si planea trabajar con archivos sin conexión, Adobe recomienda sincronizar con Document Security. Hágalo antes de desconectarse para asegurarse de que la configuración de directiva de los archivos está actualizada con el servidor. El Adobe también recomienda abrir el archivo en línea una vez, antes de abrirlo sin conexión. Si no abre el archivo una vez en línea o no se sincroniza con el servidor, es posible que aún pueda utilizar archivos protegidos por directivas sin conexión. Sin embargo, el período de concesión sin conexión no debe haber caducado y la configuración de directiva del archivo no debe haber cambiado desde la última sincronización manual o automática con el servidor.
+Las directivas pueden permitirle abrir archivos sin conexión y sin estar conectado a Document Security. Debe haber iniciado sesión anteriormente en Document Security para poder establecer sus credenciales con el servidor antes de poder trabajar sin conexión. Si planea trabajar con archivos sin conexión, Adobe le recomienda que se sincronice con Document Security. Hágalo antes de desconectarse para asegurarse de que la configuración de directiva de los archivos está actualizada con el servidor. También recomienda abrir el archivo en línea una vez, antes de abrirlo sin conexión. Si no abre el archivo una vez en línea o no se sincroniza con el servidor, es posible que aún pueda utilizar archivos protegidos por directivas sin conexión. Sin embargo, el período de concesión sin conexión no debe haber caducado y la configuración de directiva del archivo no debe haber cambiado desde la última sincronización manual o automática con el servidor.
 
 Haga lo siguiente:
 
 * En la extensión de Document Security para Microsoft® Office 2010 y 2013, en la pestaña **Document Security**, seleccione **Sincronizar sin conexión**.
 
-  ***nota **: el botón Sincronizar sin conexión está disponible aunque el usuario no tenga permiso sin conexión para el documento. Sin embargo, seleccionar el botón no hace nada.*
+  ***nota **: El botón Sincronizar sin conexión está disponible aunque el usuario no tenga permiso sin conexión para el documento. Sin embargo, seleccionar el botón no hace nada.*
 
 ### Uso de marcas de agua dinámicas {#working-with-dynamic-watermarks}
 
 La extensión de Document Security para Microsoft® Office admite la inclusión de marcas de agua dinámicas basadas en texto en documentos protegidos por políticas. Una marca de agua dinámica puede incluir información que puede cambiar, como la fecha, la hora, el nombre de usuario o el nombre de la directiva. Si un usuario imprime un archivo protegido por una directiva y dicho archivo contiene una marca de agua dinámica y el permiso de impresión, la marca de agua aparece en el resultado.
 
-La extensión de Document Security no admite funciones de marca de agua enriquecidas. Las funciones de marca de agua enriquecidas incluyen elementos como marcas de agua basadas en PDF, varios elementos en una marca de agua y opciones de formato de texto. También incluyen el intervalo de páginas.
+Document Security Extension no admite funciones de marca de agua enriquecidas. Las funciones de marca de agua enriquecidas incluyen elementos como marcas de agua basadas en PDF, varios elementos en una marca de agua y opciones de formato de texto. También incluyen el intervalo de páginas.
 
-Puede crear una marca de agua dinámica mediante las páginas web de Document Security. Para obtener más información, consulte [Ayuda para el usuario final de Document Security](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security).
+Puede crear una marca de agua dinámica mediante las páginas web de Document Security. Para obtener más información, consulte [Ayuda para el usuario final de Document Security](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security).
 
 La extensión de Document Security para Microsoft® Office ofrece compatibilidad con estas funciones de marca de agua:
 
@@ -453,7 +453,7 @@ La extensión de Document Security para Microsoft® Office ofrece compatibilidad
   </tr>
   <tr>
    <td><p>Usar como fondo</p></td>
-   <td><p>El comportamiento de visualización de una marca de agua dinámica es el mismo independientemente de si selecciona Usar como fondo.</p><p>En Word 2010 y 2013, la marca de agua dinámica solo aparece en las vistas Diseño de impresión y Vista previa de impresión. </p><p>Para Excel 2010 y 2013, aparece en las vistas Vista previa de impresión y Diseño de página.</p></td>
+   <td><p>El comportamiento de visualización de una marca de agua dinámica es el mismo independientemente de si selecciona Usar como fondo.</p><p>En Word 2010 y 2013, las marcas de agua dinámicas solo aparecen en Diseño de impresión y Vista previa de impresión. </p><p>En Excel 2010 y 2013 también aparece en Vista previa de impresión y Diseño de página.</p></td>
   </tr>
   <tr>
    <td><p>Posición vertical</p></td>
@@ -480,7 +480,7 @@ La extensión de Document Security para Microsoft® Office ofrece compatibilidad
 
 ### Abrir las páginas web de Document Security {#opening-the-document-security-web-pages}
 
-Puede abrir las páginas web de Document Security para crear y actualizar las directivas de usuario, así como para ver el estado y auditar la información sobre los archivos protegidos por directivas. También puede utilizar las páginas web de Document Security para cambiar directivas o anular el acceso a un archivo protegido por una directiva.
+Puede abrir las páginas web de Document Security para crear y actualizar las directivas de usuario, así como la información de estado de vista y auditoría de los archivos protegidos por directivas. También puede utilizar las páginas web de Document Security para cambiar directivas o revocar el acceso a un archivo protegido por una directiva.
 
 Para abrir las páginas web de Document Security, en la extensión de Document Security para Microsoft® Office 2010 y 2013, en la pestaña **Document Security**, seleccione **Crear y administrar políticas**. Si todavía no ha proporcionado la información de inicio de sesión, el explorador se abre en la página de inicio de sesión del servidor.
 
@@ -508,13 +508,13 @@ Puede anular la capacidad de abrir archivos protegidos. Al revocar el acceso a a
 
 1. Especifique un mensaje para mostrar y, si está disponible, una dirección URL para la versión actualizada y haga clic en **Aceptar**.
 
-Para obtener más información sobre la anulación de privilegios de acceso a archivos, consulte la [Ayuda del usuario final de Document Security](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
+Para obtener más información sobre la anulación de privilegios de acceso a archivos, consulte la [Ayuda del usuario final de Document Security](https://help.adobe.com/es_US/AEMForms/6.1/RMHelp/).
 
 Los privilegios de acceso se pueden restablecer a través de las páginas web de Document Security.
 
 ### Visualización del historial de auditoría de archivos {#viewing-the-file-audit-history}
 
-Document Security puede guardar el historial de auditoría de los archivos protegidos por directivas para que pueda auditar las acciones que los usuarios realizan en los archivos.
+Document Security guarda el historial de auditoría de los archivos protegidos por directivas para auditar las acciones que los usuarios realizan en los archivos.
 
 Los eventos auditados para archivos de Word, Excel y PowerPoint incluyen lo siguiente:
 
@@ -565,9 +565,9 @@ Muchas funciones comunes pueden estar restringidas en Word, Excel y PowerPoint d
 
 Si se abre un archivo protegido por una política que no permite al usuario realizar cambios, los comandos que cambien el archivo de alguna manera no estarán disponibles. Solo están disponibles los comandos que abren o crean nuevos documentos y cambian las preferencias de la aplicación.
 
-#### Restricciones de Word 2010 y Word 2013 {#word-2010-and-word-2013-restrictions}
+#### Restricciones de Word 2010 y 2013 {#word-2010-and-word-2013-restrictions}
 
-Cuando se abre un archivo protegido por una directiva en Word, la información de recuperación automática de archivos no se puede guardar hasta que se cierra y se reinicia Word. Además, las funciones enumeradas a continuación están restringidas en las situaciones descritas:
+Cuando se abre un archivo protegido por una directiva en Word, la información de recuperación automática de archivos no se puede guardar hasta que se cierre y se reinicie Word. Además, las funciones enumeradas a continuación están restringidas en las situaciones descritas:
 
 **Archivo > Nuevo > Nuevo basado en archivo** Disponible, pero no se pueden guardar los archivos creados con este comando mientras esté abierto un archivo protegido por una directiva. El contenido del nuevo archivo no se puede copiar en otro archivo.
 
@@ -579,9 +579,9 @@ Cuando se abre un archivo protegido por una directiva en Word, la información d
 
 **Archivo > Guardar y Enviar** Todas las opciones no están disponibles durante una sesión protegida.
 
-**Archivo > Información > Documento de Protect > Cifrar con contraseña, Agregar firma digital, Marcar como final, Restringir permisos por personas** No disponible durante una sesión protegida.
+**Archivo > Información > Proteger documento > Cifrar con contraseña, Agregar una firma digital, Marcar como final, Restringir el permiso de personas** No disponible durante una sesión protegida.
 
-**Archivo > Flujos de trabajo** No disponible durante una sesión protegida.
+**Archivo > Flujos de trabajo** no están disponibles durante una sesión protegida.
 
 ***Nota **: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en las versiones de Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y 2010 independiente.*
 
@@ -603,9 +603,9 @@ Cuando se abre un archivo protegido por una directiva en Word, la información d
 
 **Revisar > Revisión > Thesaurus** Restringido por el permiso de copia. No disponible si no se permite copiar.
 
-**Revisar > Idioma > Traducir > Traducir documento** Habilitado con el permiso de copia.
+**Revisar > Idioma > Traducir > Traducir documento** Habilitado con el permiso Copiar.
 
-**Revisar > Idioma > Traducir > Traducir texto seleccionado** Habilitado con el permiso de copia.
+**Revisar > Idioma > Traducir > Traducir texto seleccionado** Habilitado con el permiso Copiar.
 
 **Revisar > Idioma > Traducir > Minitraductor** Habilitado con el permiso de copia.
 
@@ -621,7 +621,7 @@ Cuando se abre un archivo protegido por una directiva en Word, la información d
 
 **Colaboración en línea** No disponible durante una sesión protegida.
 
-**Documentos principales y secundarios** La directiva de documentos principales rige los subdocumentos cuando se abren en el documento principal. Si se abren por separado, los documentos secundarios no se pueden imprimir, copiar ni modificar.
+**Documentos principales y subdocumentos** La directiva de documentos principales rige los subdocumentos cuando se abren en el documento principal. Si se abren por separado, los documentos secundarios no se pueden imprimir, copiar ni modificar.
 
 **Volver a resumir** No disponible durante una sesión protegida.
 
@@ -631,7 +631,7 @@ Cuando se abre un archivo protegido por una directiva en Word, la información d
 
 **Programador > Plantilla de documento** No disponible durante una sesión protegida. Para acceder a este comando, seleccione Archivo > Opciones > Personalizar > pestaña Programador > Plantillas > Plantilla de documento.
 
-**Esquema > Documento principal > Crear documento secundario, Insertar documento secundario** No disponible durante una sesión protegida.
+**Esquema > Documento principal > Crear subdocumento, Insertar subdocumento** No disponible durante una sesión protegida.
 
 #### Restricciones de Excel 2010 y Excel 2013 {#excel-2010-and-excel-2013-restrictions}
 
@@ -655,7 +655,7 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 **Archivo > Flujos de trabajo** No disponible durante una sesión protegida.
 
-***Nota **: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en las versiones de Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y 2010 independiente.*
+***Nota **: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y versiones independientes de 2010.*
 
 **Archivo > Servidor > Menú tareas del servidor de archivos** No disponible durante una sesión protegida.
 
@@ -681,7 +681,7 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 **Insertar > Texto > Encabezado y pie de página** Restringido por el permiso Cambiar. No disponible para un documento protegido por una directiva.
 
-**Datos > Obtener datos externos** No se pueden importar los datos de archivos protegidos por directivas.
+**Datos > Obtener datos externos** Los datos de archivos protegidos por directivas no se pueden importar.
 
 **Datos > Esquema > Subtotal** Restringido por el permiso Cambiar.
 
@@ -733,9 +733,9 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 **Archivo > Guardar y enviar** No disponible durante una sesión protegida.
 
-**Archivo > Información > Presentación de Protect > Cifrar con contraseña, Agregar una firma digital, Marcar como final, Restringir permisos por personas** No disponible durante una sesión protegida.
+**Archivo > Información > Proteger presentación > Cifrar con contraseña, Añadir una firma digital, Marcar como final, Restringir permisos de personas** No disponible durante una sesión protegida.
 
-**Archivo > Opciones de PowerPoint > Guardar información de recuperación automática** No disponible durante una sesión protegida.
+**Archivo > Opciones de PowerPoint > Guardar información de Autorrecuperación** No disponible durante una sesión protegida.
 
 **Archivo > Servidor > Menú tareas del servidor de archivos** No disponible durante una sesión protegida.
 
@@ -745,13 +745,13 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 **Inicio > Portapapeles > Pegado especial** Restringido por el permiso de modificación.
 
-**Inicio > Diapositivas > Nuevas diapositivas > Diapositivas del esquema, reutilizar diapositivas** No disponible durante una sesión protegida.
+**Inicio > Diapositivas > Nuevas diapositivas > Diapositivas del esquema, Reutilizar diapositivas** No disponible durante una sesión protegida.
 
 **Insertar > Texto > Objeto** No disponible durante una sesión protegida. Los archivos protegidos por directivas no se pueden insertar en ningún momento.
 
 **Diseño > Fondo > Estilos de fondo, Ocultar gráficos de fondo, Formato de fondo** No disponible para un archivo protegido por una directiva que contenga una marca de agua dinámica.
 
-**Presentación con diapositivas > Configurar > Grabar presentación** Restringido por el permiso de cambio.
+**Presentación con diapositiva > Configurar > Grabar presentación con diapositiva** Restringido por el permiso de cambio.
 
 **Revisar > Revisión > Thesaurus** Restringido por el permiso de copia.
 
@@ -769,9 +769,9 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 ## Usar proveedores de autenticación de terceros {#use-third-party-authentication-providers}
 
-Puede utilizar proveedores de autenticación de terceros con AEM Forms Document Security. Estos proveedores de autenticación le ayudan a agregar una capa de acceso adicional a los documentos protegidos. AEM Forms Document Security admite los siguientes flujos de trabajo de autenticación extendida:
+Puede utilizar proveedores de autenticación de terceros con AEM Forms Document Security. Estos proveedores de autenticación le ayudan a agregar una capa de acceso adicional a los documentos protegidos. AEM Forms Document Security admite los siguientes flujos de trabajo de autenticación extendidos:
 
-* Autenticación extendida mediante la dirección URL de AEM Forms predeterminada
+* Autenticación extendida mediante la URL de AEM Forms predeterminada
 * Autenticación extendida mediante una dirección URL personalizada
 * Flujo de trabajo de autenticación extendida predeterminado con proveedores de identidad de terceros configurados en AEM Forms en el servidor JEE
 * Flujo de trabajo de autenticación extendida personalizado con proveedores de identidad de terceros configurados en AEM Forms en el servidor JEE
