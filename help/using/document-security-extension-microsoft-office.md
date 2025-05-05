@@ -82,7 +82,7 @@ Los recursos de esta tabla pueden ayudarle a obtener más información sobre AEM
   </tr>
   <tr>
    <td><p>Actualizaciones de parches, notas técnicas e información adicional sobre esta versión del producto</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support">Soporte técnico de Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support">Soporte técnico de Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>
