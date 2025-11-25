@@ -1,19 +1,19 @@
 ---
-title: Instalación y configuración de la extensión de AEM Document Security para Microsoft Office
+title: Instalar y configurar la extensión de AEM Document Security para Microsoft Office
 description: Este documento le guía a través de la instalación y configuración de la extensión de Adobe Experience Manager Document Security 6.2 para Microsoft Office.
 uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# Instalación y configuración de la extensión de AEM Document Security para Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# Instalar y configurar la extensión de AEM Document Security para Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Este documento le guía a través de la instalación y configuración de Adobe Experience Manager Document Security Extension para Microsoft Office.
 
@@ -56,7 +56,7 @@ Asegúrese de que cuenta con las siguientes configuraciones cuando quiera instal
 
 * Versiones de 32 o 64 bits de Microsoft Office 2019 Professional Plus en Microsoft Windows 11 en inglés, francés, alemán, japonés, italiano, español, portugués (Brasil), coreano, chino simplificado o chino tradicional.
 
-* Versiones de 32 o 64 bits de Microsoft Windows 10 en inglés, francés, alemán, japonés, italiano, español, portugués (Brasil), coreano, chino simplificado o chino tradicional.
+* Versiones de 32 o 64 bits de Microsoft Windows 10 en inglés, francés, alemán, japonés, italiano, español, brasileño, portugués, coreano, chino simplificado o chino tradicional.
 
   **Nota:** *La extensión de Document Security para Microsoft Office debería funcionar también en dispositivos Microsoft Surface.*
 
@@ -98,7 +98,7 @@ El instalador también está disponible como archivo MSI, que se puede utilizar 
 
    `msiexec /I DocumentSecurityExtensionforMicrosoftOffice.msi /qn`
 
-## Preconfiguración del instalador para conectarse a Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
+## Preconfigure el instalador para conectarse a Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
 Puede preconfigurar Document Security Extension para el programa de instalación de Microsoft Office de modo que señale a un LiveCycle o servidor de AEM. Al hacerlo, se garantiza que los usuarios que instalen Document Security Extension para Microsoft Office puedan utilizar las funciones sin configurar una conexión. Como tal, los usuarios pueden abrir documentos protegidos sin necesidad de configuración. Sin embargo, no pueden proteger nuevos documentos hasta que configuren el cliente para que utilice un servidor en particular.
 
@@ -173,7 +173,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
    >
    >Una práctica habitual es utilizar el mismo nombre de archivo que el archivo MSI original (por ejemplo, `DocumentSecurityExtensionforMicrosoftOffice.msi`).
 
-## Configuración de la aplicación automática de una directiva predeterminada {#configuring-automatic-application-of-a-default-policy}
+## Configurar la aplicación automática de una directiva predeterminada {#configuring-automatic-application-of-a-default-policy}
 
 Como parte de la configuración, puede configurar la aplicación automática de una directiva predeterminada para que Document Security Extension para Microsoft Office proteja todos los documentos guardados.
 
@@ -182,13 +182,13 @@ Puede indicar una de las siguientes opciones.
 * Proteger todos los documentos con una directiva predeterminada.
 * Permitir a los usuarios guardar de forma opcional un archivo en un formato no protegido cuando no puedan conectarse al servidor. Esta flexibilidad permite tener en cuenta los casos en los que los usuarios crean documentos mientras están desconectados de la red (por ejemplo, mientras se encuentran en un avión).
 
-Después de habilitar la función de directiva de aplicación automática, el documento se protege con la directiva predeterminada en los siguientes casos:
+Después de habilitar la función de directiva aplicada automáticamente, el documento se protege con la directiva predeterminada en los siguientes casos:
 
 * El usuario edita y guarda un documento recién creado
 * El usuario edita y guarda un documento no protegido
 * El usuario abre una aplicación que se abre con un documento predeterminado, lo edita y, a continuación, guarda el documento
 
-### Configurar la función de directiva de aplicación automática en el archivo MSI  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### Configurar la función de directiva aplicada automáticamente en el archivo MSI {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 Antes de comenzar, preconfigure el programa de instalación para que se vincule a su LiveCycle o servidor de AEM Forms, tal como se describe anteriormente en este artículo.
 
@@ -209,12 +209,12 @@ Antes de comenzar, preconfigure el programa de instalación para que se vincule 
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>Habilite o deshabilite la función de aplicación automática de directivas.</p> <p><code>1</code>: Habilitar</p> <p>0: Deshabilitar</p> </td>
+   <td><p>Habilite o deshabilite la función de directiva aplicada automáticamente.</p> <p><code>1</code>: Habilitar</p> <p>0: Deshabilitar</p> </td>
    <td><p>0</p> </td>
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>La directiva es el GUID que se utiliza cuando se guardan nuevos documentos. Este valor se aplica a la función de directiva de aplicación automática.</p> </td>
+   <td><p>La directiva es el GUID que se utiliza cuando se guardan nuevos documentos. Este valor se aplica a la función de directiva aplicada automáticamente.</p> </td>
    <td><p>Id. de directiva hexadecimal, tal y como aparece en el servidor RM</p> </td>
   </tr>
   <tr>
@@ -247,14 +247,14 @@ Antes de comenzar, preconfigure el programa de instalación para que se vincule 
 
 ## Habilitar la protección automática de nuevos documentos {#enabling-automatic-protection-of-new-documents}
 
-El administrador puede habilitar la posibilidad de proteger automáticamente cualquier documento que guarde un usuario. El administrador configura la función de directiva de aplicación automática en el programa de instalación de extensión de Document Security para Microsoft Office.
+El administrador puede habilitar la posibilidad de proteger automáticamente cualquier documento que guarde un usuario. El administrador configura la función de directiva aplicada automáticamente en el programa de instalación de la extensión de Document Security para Microsoft Office.
 
-Si la directiva de aplicación automática está habilitada, todos los documentos que guarda el usuario se protegen con la directiva predeterminada. Esta acción se aplica en estas situaciones:
+Si la directiva aplicada automáticamente está habilitada, todos los documentos que guarda el usuario se protegen con la directiva predeterminada. Esta acción se aplica en estas situaciones:
 
 * Cuando un usuario crea un nuevo documento, lo edita y lo guarda.
 * Cuando un usuario abre un documento no protegido, lo edita y lo guarda.
 
-Para obtener información sobre la configuración de la directiva de aplicación automática, consulte [Configurar la aplicación automática de la directiva predeterminada](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
+Para obtener información acerca de cómo configurar la directiva aplicada automáticamente, vea [Configurar una aplicación automática de la directiva predeterminada](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
 ## Habilitar la interfaz de usuario sin cinta de herramientas {#enable-ribbon-less-user-interface}
 
@@ -270,7 +270,7 @@ Puede habilitar/deshabilitar la interfaz de usuario sin cinta de herramientas mo
 
 ## Habilitar marca de agua para imprimir en Microsoft Excel {#enable-watermark-for-printing-in-microsoft-excel}
 
-Puede cambiar la configuración del Registro de Windows para que las marcas de agua dinámicas coexistan con los encabezados y pies de página actuales. La configuración del registro hace que la marca de agua solo esté disponible durante la impresión. Realice los siguientes pasos para actualizar el Registro y activar las marcas de agua durante la impresión:
+Puede cambiar la configuración del Registro de Windows para que las marcas de agua dinámicas coexistan con los encabezados y pies de página actuales. La configuración del registro hace que la marca de agua solo esté disponible durante la impresión. Realice los siguientes pasos para actualizar el Registro y habilitar las marcas de agua durante la impresión:
 
 1. Realice una copia de seguridad del Registro de Windows antes de realizar cambios en él. Para obtener instrucciones detalladas, consulte [Modificar el Registro de Windows](https://learn.microsoft.com/es-es/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 1. En el Editor del Registro, vaya a HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 o HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
@@ -309,7 +309,7 @@ El archivo CommonResources.dll contiene información sobre las plantillas de rec
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Medio</strong></p> </td>
+   <td><p><strong>Recurso</strong></p> </td>
    <td><p><strong>Representa </strong></p> </td>
   </tr>
   <tr>

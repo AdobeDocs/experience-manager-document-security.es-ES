@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Document Security Extension para Microsoft® Office mejora LiveCycle Rights Mana
 
 Document Security garantiza que solo las personas autorizadas por usted puedan utilizar archivos que contengan su propiedad intelectual. Con Document Security, puede proteger archivos mediante directivas de confidencialidad. Una *directiva* es una recopilación de información que incluye parámetros de confidencialidad y una lista de usuarios autorizados. La configuración especificada en una directiva determina cómo puede un destinatario utilizar un archivo al que se aplica la directiva. Por ejemplo, puede especificar si los destinatarios pueden imprimir o copiar texto o guardar cambios.
 
-Los administradores y usuarios de Document Security crean directivas. Los administradores crean directivas organizativas que están disponibles para todos los usuarios autorizados. Los administradores o coordinadores de conjuntos de directivas también pueden crear grupos de directivas llamados *conjuntos de directivas* que están disponibles para un subconjunto de usuarios. Los usuarios pueden crear sus propias directivas, que solo ellos pueden utilizar. Los administradores, coordinadores de conjuntos de directivas y usuarios crean directivas mediante las páginas web de Document Security.
+Los administradores y usuarios de Document Security crean directivas. Los administradores crean directivas organizativas que están disponibles para todos los usuarios autorizados. Los administradores o coordinadores de conjuntos de políticas también pueden crear grupos de políticas llamados *conjuntos de políticas* que están disponibles para un subconjunto de usuarios. Los usuarios pueden crear sus propias directivas, que solo ellos pueden utilizar. Los administradores, coordinadores de conjuntos de políticas y usuarios crean políticas mediante las páginas web de Document Security.
 
 Aunque las directivas se almacenan en Document Security, puede aplicarlas a los archivos mediante Word, Excel o PowerPoint. Cuando se aplica una directiva a un archivo, la información que contiene el archivo está protegida por la configuración de confidencialidad especificada en la directiva. Al distribuir el archivo protegido por una directiva, solo los destinatarios autorizados pueden acceder a su contenido.
 
@@ -50,7 +50,7 @@ Cuando un usuario intenta abrir un archivo protegido por una directiva, Document
 * Para el período de validez especificado en la directiva.
 * Hasta que un administrador o la persona que aplicó la directiva anulen el acceso al archivo o cambien la directiva.
 
-  Si la persona que aplicó la directiva la cambia o anula el acceso al archivo, los permisos del usuario cambian o se eliminan aunque el usuario ya tenga el archivo. Si se revoca el archivo, se puede proporcionar una URL para que el usuario obtenga una copia actualizada.
+  Si la persona que aplicó la directiva la cambia o anula el acceso al archivo, los permisos del usuario cambian o se eliminan aunque el usuario ya tenga el archivo. Si se revoca el archivo mismo, se puede proporcionar una URL al usuario para obtener una copia actualizada.
 
   Si la directiva permite el acceso sin conexión, los usuarios pueden abrir los archivos protegidos por directivas sin una conexión a Internet o a la red durante el período de concesión sin conexión especificado. Cuando finaliza el período de concesión sin conexión, el usuario debe conectarse y sincronizar con Document Security, para iniciar un nuevo período de concesión.
 
@@ -78,11 +78,11 @@ Los recursos de esta tabla pueden ayudarle a obtener más información sobre AEM
   </tr>
   <tr>
    <td><p>Ayuda para el administrador de AEM Forms</p> </td>
-   <td><p><a href=" https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/administrator-help/get-started/configure-general-aem-forms-settings">Ayuda para el administrador </a>o, en las páginas de administración de Document Security, haga clic en el vínculo Ayuda en la esquina superior derecha de una página.</p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/administrator-help/get-started/configure-general-aem-forms-settings">Ayuda para el administrador </a>o, en las páginas de administración de Document Security, haga clic en el vínculo Ayuda en la esquina superior derecha de una página.</p> </td>
   </tr>
   <tr>
    <td><p>Actualizaciones de parches, notas técnicas e información adicional sobre esta versión del producto</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support">Soporte técnico de Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support">Soporte técnico de Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>

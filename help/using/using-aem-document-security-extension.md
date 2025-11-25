@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: ht
-source-wordcount: '6136'
-ht-degree: 100%
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
+source-wordcount: '6139'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,7 @@ Puede utilizar proveedores de autenticación de terceros con AEM Forms Document 
 
 #### Autenticación extendida mediante la URL de AEM Forms predeterminada {#extended-authentication-using-default-aem-forms-url}
 
-Puede utilizar la URL de AEM Forms predeterminada para la autenticación extendida. La página de aterrizaje predeterminada contiene la marca de Adobe. Además, la configuración predeterminada de AEM Forms se usa al utilizar la dirección URL predeterminada de AEM Forms para la autenticación extendida.
+Puede utilizar la URL de AEM Forms predeterminada para la autenticación extendida. La página de destino predeterminada contiene la marca de Adobe. Además, la configuración predeterminada de AEM Forms se usa al utilizar la dirección URL predeterminada de AEM Forms para la autenticación extendida.
 
 Realice los siguientes pasos para habilitar la autenticación extendida con la dirección URL de aterrizaje de Adobe predeterminada:
 
@@ -309,7 +309,7 @@ Algunos de los ajustes de directiva disponibles para crear directivas en las pá
    <td><p>No aplicable.</p></td>
   </tr>
   <tr>
-   <td><p>Algoritmo de codificación y longitud de clave </p></td>
+   <td><p>Algoritmo de cifrado y longitud de clave </p></td>
    <td><p>Todas las opciones son compatibles.</p></td>
   </tr>
   <tr>
@@ -327,7 +327,7 @@ Para obtener más información sobre la creación y administración de directiva
 
 ### Aplicar directivas {#applying-policies}
 
-Puede aplicar cualquier directiva disponible a un archivo, incluidas las directivas que haya creado y las que formen parte de conjuntos de directivas a las que tenga acceso. Antes de aplicar una directiva, debe guardar el archivo.
+Puede aplicar cualquier política disponible a un archivo, incluidas las políticas que haya creado y las que formen parte de conjuntos de políticas a las que tenga acceso. Antes de aplicar una directiva, debe guardar el archivo.
 
 Después de aplicar una directiva, se añade a la lista Utilizados recientemente en el menú de AEM Document Security para facilitar la aplicación de las directivas que se utilizan con más frecuencia. La lista Utilizados recientemente muestra las directivas únicamente para el servidor al que está conectado o su servidor predeterminado si no ha iniciado sesión en otra instancia de Document Security.
 
@@ -365,7 +365,7 @@ Si está trabajando con un archivo protegido por una directiva, es posible que a
 
 >[!NOTE]
 >
->Cuando se utilizan aplicaciones de Office compatibles con la extensión de Document Security, se recomienda desactivar la configuración DEP de Windows. Para garantizar que las aplicaciones de Office se inicien sin problemas en un equipo que tenga instalado Document Security Extension y McAfee VirusScan con el análisis en tiempo real activado, desactive la opción de protección contra desbordamiento del búfer en la consola de McAfee VirusScan. Este ajuste ayuda a evitar posibles conflictos.
+>Cuando se utilizan aplicaciones de Office compatibles con la extensión de Document Security, se recomienda desactivar la configuración DEP de Windows. Para garantizar que las aplicaciones de Office se inicien sin problemas en un equipo que tenga instalado Document Security Extension y McAfee VirusScan con el análisis en tiempo real habilitado, deshabilite la opción de protección contra desbordamiento del búfer en la consola de McAfee VirusScan. Este ajuste ayuda a evitar posibles conflictos.
 
 Si una función no está disponible, el nombre del comando en el menú y el botón de barra de herramientas relacionados no están disponibles. En Document Security Extension para Microsoft® Office, cuando pasa el puntero del ratón sobre el comando o el botón, una sugerencia de herramienta indica que con Document Security el comando no está disponible.
 
@@ -373,7 +373,7 @@ Si una función no está disponible, el nombre del comando en el menú y el bot�
 
 Puede abrir archivos protegidos por directivas con los mismos métodos que para cualquier otro archivo. Si aún no ha iniciado sesión en Document Security, se le pedirá que lo haga. Es decir, si no está conectado a Internet y puede abrir el archivo sin conexión. Se deniega el acceso si cancela el proceso de inicio de sesión.
 
-Si no tenía permiso para abrir el archivo, se le informará de que se ha denegado el acceso. Si se han revocado los privilegios de acceso a archivos, también se le puede dirigir a una versión actualizada del archivo si hay una disponible. Si no puede abrir un archivo protegido por una directiva, póngase en contacto con el editor de archivos para obtener ayuda adicional.
+Si no tenía permiso para abrir el archivo, se le informará de que se ha denegado el acceso. Si se revocan los privilegios de acceso a archivos, también se le puede dirigir a una versión actualizada del archivo si hay una disponible. Si no puede abrir un archivo protegido por una directiva, póngase en contacto con el editor de archivos para obtener ayuda adicional.
 
 Cuando se abre un archivo protegido, el texto de la barra de título que sigue al nombre del archivo indica que el archivo está protegido por AEM Document Security.
 
@@ -407,13 +407,13 @@ Haga lo siguiente:
 
 ### Guardar documentos cuando la directiva de aplicación automática está habilitada {#saving-documents-when-auto-apply-policy-is-enabled}
 
-Si el administrador ha habilitado la funcionalidad de política de aplicación automática, cualquier documento que cree o edite se protegerá automáticamente al guardar el documento.
+Si el administrador ha habilitado la funcionalidad de directiva aplicada automáticamente, cualquier documento que cree o edite se protegerá automáticamente al guardar el documento.
 
-Si la directiva de aplicación automática está activada, Document Security Extension para Microsoft® Office le pide que inicie sesión en el servidor de Document Security. Escriba su nombre de usuario y contraseña para que el servidor pueda autenticarle. Si ha proporcionado las credenciales de inicio de sesión correctas, el documento se guardará y protegerá.
+Si la directiva aplicada automáticamente está habilitada, la extensión de Document Security para Microsoft® Office le pedirá que inicie sesión en el servidor de Document Security. Escriba su nombre de usuario y contraseña para que el servidor pueda autenticarle. Si ha proporcionado las credenciales de inicio de sesión correctas, el documento se guardará y protegerá.
 
 >[!NOTE]
 >
->Si no puede iniciar sesión en Document Security, es posible que el documento se guarde o no. Esto depende de cómo haya configurado el administrador la directiva de aplicación automática. Consulte con el administrador cómo se gestionan los documentos en esta situación.
+>Si no puede iniciar sesión en Document Security, es posible que el documento se guarde o no. Esta situación depende de cómo haya configurado el administrador la directiva aplicada automáticamente. Consulte con el administrador cómo se gestionan los documentos en esta situación.
 
 ### Sincronización del acceso sin conexión {#synchronizing-for-offline-access}
 
@@ -555,7 +555,7 @@ Si un comando no está disponible, el nombre del comando en el menú y el botón
 >La aplicación de una directiva a un archivo que contiene un vínculo a un archivo incrustado no se aplica al archivo vinculado. Document Security para Microsoft® Office no extiende la protección a los archivos vinculados.
 
 * Los archivos de Word, Excel y PowerPoint protegidos por directivas no se pueden abrir en una ventana del explorador de Internet Explorer.
-* Los usuarios a los que solo se concedió el permiso de modificación no pueden copiar contenido en un archivo desde otra aplicación mediante el Portapapeles de Windows. Los usuarios pueden copiar contenido en archivos activando la opción Portapapeles de Microsoft® Office.
+* Los usuarios a los que solo se concedió el permiso de modificación no pueden copiar contenido en un archivo desde otra aplicación mediante el Portapapeles de Windows. Los usuarios pueden copiar contenido en archivos habilitando la opción Portapapeles de Microsoft® Office.
 * Al abrir un archivo protegido por una política en Microsoft® Office, la tecla Impr Pant deja de estar disponible hasta que se cierre la aplicación o la sesión caduque.
 * Document Security para Microsoft® Office no admite la creación y el control de versiones distribuidas basadas en la web (Web-based Distributed Authoring and Versioning, WebDAV). En la mayoría de los casos, no se puede abrir un archivo protegido por una directiva desde una carpeta WebDAV. Si puede abrir un archivo protegido por una directiva, no tendrá permisos para guardar, imprimir, cambiar o copiar del archivo.
 
@@ -653,7 +653,7 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 **Archivo > Opciones > Complementos** No se puede agregar ni eliminar durante una sesión protegida.
 
-**Archivo > Flujos de trabajo** No disponible durante una sesión protegida.
+**Archivo > Flujos de trabajo** no están disponibles durante una sesión protegida.
 
 ***Nota **: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y versiones independientes de 2010.*
 
