@@ -8,7 +8,7 @@ product: adobe experience manager
 type: Documentation
 feature-set: Experience Manager Forms
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-document-security.en
+git-repo: https://github.com/AdobeDocs/experience-manager-document-security.es-ES
 index: true
 recommendations: noDisplay
 source-git-commit: 5bf50efa455b920583453aa8617757596d29545d
