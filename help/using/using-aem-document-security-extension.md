@@ -1,14 +1,18 @@
 ---
-title: Uso de la extensión Document Security de AEM para Microsoft® Office
+title: Uso de la extensión de AEM Document Security para Microsoft&reg; Office
 description: Puede controlar el uso que hacen los destinatarios de los archivos protegidos mediante directivas, independientemente de la amplitud de su distribución. El documento explica cómo proteger archivos y cómo trabajar con archivos protegidos.
 uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+TQID: https://experienceleague.adobe.com/cI8I72aByEI0tcij2o-QNkGjTxCztTa4uZFXsfwlMVc
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '6139'
+source-wordcount: 6278
 ht-degree: 98%
 
 ---
@@ -282,7 +286,7 @@ Algunos de los ajustes de directiva disponibles para crear directivas en las pá
    <td><p>Compatible.</p></td>
   </tr>
   <tr>
-   <td><p>Período de préstamo sin conexión automático</p></td>
+   <td><p>Período de concesión sin conexión automático</p></td>
    <td><p>Compatible.</p></td>
   </tr>
   <tr>
@@ -423,7 +427,7 @@ Haga lo siguiente:
 
 * En la extensión de Document Security para Microsoft® Office 2010 y 2013, en la pestaña **Document Security**, seleccione **Sincronizar sin conexión**.
 
-  ***nota &#x200B;**: El botón Sincronizar sin conexión está disponible aunque el usuario no tenga permiso sin conexión para el documento. Sin embargo, seleccionar el botón no hace nada.*
+  ***nota **: El botón Sincronizar sin conexión está disponible aunque el usuario no tenga permiso sin conexión para el documento. Sin embargo, seleccionar el botón no hace nada.*
 
 ### Uso de marcas de agua dinámicas {#working-with-dynamic-watermarks}
 
@@ -583,7 +587,7 @@ Cuando se abre un archivo protegido por una directiva en Word, la información d
 
 **Archivo > Flujos de trabajo** no están disponibles durante una sesión protegida.
 
-***Nota &#x200B;**: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en las versiones de Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y 2010 independiente.*
+***Nota **: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en las versiones de Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y 2010 independiente.*
 
 **Publicación de blog > Publicar** No disponible durante una sesión protegida.
 
@@ -655,7 +659,7 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 **Archivo > Flujos de trabajo** no están disponibles durante una sesión protegida.
 
-***Nota &#x200B;**: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y versiones independientes de 2010.*
+***Nota **: El inicio de un flujo de trabajo en Word, Excel y PowerPoint 2010 solo está disponible en las versiones de Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 y 2010 independiente.*
 
 **Archivo > Servidor > Menú tareas del servidor de archivos** No disponible durante una sesión protegida.
 
@@ -717,7 +721,7 @@ Las siguientes funciones están restringidas en las situaciones descritas:
 
 **Guardar información de recuperación automática** No disponible durante una sesión protegida.
 
-***Nota &#x200B;**: Si intenta cambiar una celda en un archivo protegido por una directiva sin permiso, Excel le advierte incorrectamente que utilice el comando Desproteger hoja para quitar la protección.*
+***Nota **: Si intenta cambiar una celda en un archivo protegido por una directiva sin permiso, Excel le advierte incorrectamente que utilice el comando Desproteger hoja para quitar la protección.*
 
 #### Restricciones de PowerPoint 2010 y PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 

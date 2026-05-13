@@ -1,15 +1,20 @@
 ---
-title: Introducción a la extensión Document Security de AEM para Microsoft® Office
-description: Con Document Security Extension para Microsoft&reg; Office, puede aplicar una configuración de confidencialidad predefinida a sus archivos de Microsoft Microsoft&reg; Office.
+title: Introducción a la extensión de AEM Document Security para Microsoft&reg; Office
+description: Con la extensión de Document Security para Microsoft&reg; Office, puede aplicar parámetros de confidencialidad predefinidos a sus archivos de Microsoft&reg; Office.
 uuid: a5428c50-fae3-4823-9e6f-0f5306e7248f
 content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+TQID: https://experienceleague.adobe.com/YnTOBtidvTX9vCQcIiF0IAXWnqCRZDY3YWUgStWVmh0
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 98%
+source-wordcount: 1293
+ht-degree: 96%
 
 ---
 
@@ -82,7 +87,7 @@ Los recursos de esta tabla pueden ayudarle a obtener más información sobre AEM
   </tr>
   <tr>
    <td><p>Actualizaciones de parches, notas técnicas e información adicional sobre esta versión del producto</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support">Soporte técnico de Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support">Soporte técnico de Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>
