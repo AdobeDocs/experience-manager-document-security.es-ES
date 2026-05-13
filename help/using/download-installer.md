@@ -1,14 +1,22 @@
 ---
-title: Descarga de la extensión Document Security de Adobe Experience Manager/Rights Management de LiveCycle para Microsoft® Office
-description: Utilice el software Document Security Extension para Microsoft&reg; Office para proteger los archivos esenciales contra el acceso no autorizado
+title: Descargar la extensión de Adobe Experience Manager Document Security/LiveCycle Rights Management para Microsoft&reg; Office
+description: Utilice la extensión de Document Security para el software Microsoft&reg; Office para proteger los archivos esenciales contra el acceso no autorizado
 uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
-source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
+TQID: https://experienceleague.adobe.com/wWp81LlFGPn-20erOk0FoBilgFkdAlpHAjBqNsNL3nQ
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 82%
+source-wordcount: 245
+ht-degree: 87%
 
 ---
 
@@ -23,7 +31,7 @@ Con el software Document Security Extension para Microsoft® Office, puede mante
 ## Requisitos del sistema {#system-requirements}
 
 * Versiones de 32 o 64 bits de Microsoft® Office 2019 Professional Plus en Microsoft® Windows 11
-* Versiones de 32 o 64 bits de Microsoft® Office 2016, Office 2019 o aplicaciones de escritorio de Office instaladas como parte de Office 365 en Microsoft® Windows 10
+* Versiones de 32 o 64 bits de Microsoft® Office 2016, Office 2019 o aplicaciones de Microsoft® Office para escritorio instaladas como parte de Office 365 en Microsoft® Windows 10
 * Nota: También se espera que la extensión de Document Security para Microsoft® Office funcione en dispositivos Microsoft® Surface.
 * Procesador de 1,3 GHz o superior
 * 2 GB de RAM

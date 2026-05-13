@@ -6,9 +6,18 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+TQID: https://experienceleague.adobe.com/VeYp8E0Yyp4uOAx33B6YmQVUJfNFZOvIad97NopbKcM
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '2845'
+source-wordcount: 2933
 ht-degree: 94%
 
 ---
@@ -203,7 +212,7 @@ Antes de comenzar, preconfigure el programa de instalación para que se vincule 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Nombre de clave</strong></p> </td>
+   <td><p><strong>Nombre de la clave</strong></p> </td>
    <td><p><strong>Descripción</strong></p> </td>
    <td><p><strong>Valor predeterminado </strong><strong></strong><strong>de clave</strong></p> </td>
   </tr>
@@ -258,7 +267,7 @@ Para obtener información acerca de cómo configurar la directiva aplicada autom
 
 ## Habilitar la interfaz de usuario sin cinta de herramientas {#enable-ribbon-less-user-interface}
 
-Puede habilitar/deshabilitar la interfaz de usuario sin cinta de herramientas modificando la configuración en el Registro de Windows. Siga estos pasos para modificar el Registro y habilitar la interfaz de usuario sin cinta de herramientas:
+Puede habilitar/deshabilitar la interfaz de usuario sin cinta de herramientas modificando la configuración en el Registro de Windows. Siga estos pasos para actualizar el Registro y habilitar la interfaz de usuario sin cinta de herramientas:
 
 1. Realice una copia de seguridad del Registro de Windows antes de realizar cambios en él. Para obtener instrucciones detalladas, consulte [Modificar el Registro de Windows](https://learn.microsoft.com/es-es/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 1. En el Editor del Registro, vaya a HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 o HKEY_LOCAL_MACHINE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
