@@ -4,6 +4,7 @@ solution: Experience Manager, Experience Manager Forms
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+usetq: true
 product: adobe experience manager
 type: Documentation
 feature-set: Experience Manager Forms
@@ -11,7 +12,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-document-security.es-ES
 index: true
 recommendations: noDisplay
-source-git-commit: 5bf50efa455b920583453aa8617757596d29545d
+source-git-commit: ed1803ee4d362c35ce8003223b3951779be96ee9
 workflow-type: tm+mt
 source-wordcount: 153
 ht-degree: 1%
