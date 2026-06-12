@@ -212,7 +212,7 @@ Antes de comenzar, preconfigure el programa de instalación para que se vincule 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Nombre de la clave</strong></p> </td>
+   <td><p><strong>Nombre de clave</strong></p> </td>
    <td><p><strong>Descripción</strong></p> </td>
    <td><p><strong>Valor predeterminado </strong><strong></strong><strong>de clave</strong></p> </td>
   </tr>
