@@ -3,7 +3,9 @@ cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Forms
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: "Experience Manager"
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: "Experience Manager Forms"
 usetq: true
 product: adobe experience manager
 type: Documentation
@@ -14,11 +16,9 @@ index: true
 recommendations: noDisplay
 source-git-commit: ed1803ee4d362c35ce8003223b3951779be96ee9
 workflow-type: tm+mt
-source-wordcount: 153
+source-wordcount: '146'
 ht-degree: 1%
-
 ---
-
 
 # Metadatos para uso interno
 
