@@ -8,11 +8,15 @@ exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 TQID: https://experienceleague.adobe.com/wWp81LlFGPn-20erOk0FoBilgFkdAlpHAjBqNsNL3nQ
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
 source-wordcount: 245
